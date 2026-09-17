@@ -1,0 +1,366 @@
+/* ==============================
+   RESET & DASAR
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   HEADER & NAVIGASI
+   ============================== */
+
+header {
+    background: #111827;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h2 {
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+
+/* ==============================
+   MAIN
+   ============================== */
+
+main {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+
+/* ==============================
+   HERO
+   ============================== */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.hero img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.hero-text h3 {
+    color: #0284c7;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    color: #4b5563;
+}
+
+
+/* ==============================
+   JUDUL SECTION
+   ============================== */
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 30px;
+}
+
+
+/* ==============================
+   ABOUT
+   ============================== */
+
+.about {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about p {
+    color: #4b5563;
+    font-size: 16px;
+}
+
+
+/* ==============================
+   SKILLS
+   ============================== */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.skill {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   PROJECT / CARD
+   ============================== */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   BADGE
+   ============================== */
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 15px;
+}
+
+.badge {
+    display: inline-block;
+    background: #f1f5f9;
+    color: #334155;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   FORM CONTACT
+   ============================== */
+
+.contact-form {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0284c7;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+    background: #111827;
+    color: white;
+}
+
+
+/* ==============================
+   RESPONSIVE / HP
+   ============================== */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    main {
+        width: 90%;
+    }
+
+    .hero img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+}
