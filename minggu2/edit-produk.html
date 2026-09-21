@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Produk - Admin Panel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100 min-h-screen flex flex-col">
+
+  <header class="bg-slate-900 text-white px-6 py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Admin Panel</h1>
+      <span class="text-sm text-slate-300">Administrator</span>
+    </div>
+  </header>
+
+  <nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap gap-6 py-4">
+      <a href="dashboard.html" class="text-slate-600">Dashboard</a>
+      <a href="products.html" class="text-blue-600 font-semibold">Products</a>
+      <a href="#" class="text-slate-600">Users</a>
+      <a href="#" class="text-slate-600">Setting</a>
+      <a href="index.html" class="text-red-600">Logout</a>
+    </div>
+  </nav>
+
+  <main class="flex-1 max-w-3xl w-full mx-auto px-6 py-8">
+
+    <div class="bg-white p-8 rounded-xl shadow">
+      <h2 class="text-3xl font-bold text-slate-800 mb-6">Edit Produk</h2>
+
+      <form action="products.html">
+
+        <div class="mb-5">
+          <label class="block mb-2 font-medium">Name</label>
+          <input type="text"
+                 value="Laptop Lenovo"
+                 required
+                 class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500">
+        </div>
+
+        <div class="mb-5">
+          <label class="block mb-2 font-medium">Stock</label>
+          <input type="number"
+                 value="15"
+                 required
+                 class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500">
+        </div>
+
+        <div class="mb-6">
+          <label class="block mb-2 font-medium">Description</label>
+          <textarea
+            rows="5"
+            class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500">Laptop Lenovo untuk kebutuhan kerja dan belajar.</textarea>
+        </div>
+
+        <button type="submit"
+                class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+          Submit
+        </button>
+
+        <a href="products.html"
+           class="ml-2 bg-slate-500 text-white px-6 py-3 rounded-lg">
+          Cancel
+        </a>
+
+      </form>
+    </div>
+
+  </main>
+
+  <footer class="bg-slate-900 text-slate-300 text-center py-4">
+    <p>&copy; 2026 Admin Panel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
